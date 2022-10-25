@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> {% block 'titulo' %} {% endblock %} </title> 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     {% block 'head' %} 
+     {% endblock %}
+</head>
+<body>
+    <a href="{% url 'tema_desenho' %}" style="text-decoration: none;">
+        <div class="container" style="background-color: rgba(255, 31, 199, 0.24); margin-top: 15px; height: 50px;">
+            <h1 style="text-align: center; font-size: 37px; margin-bottom: 0px; color: aliceblue;">Tema do Desenho</h1>
+        </div>
+    </a>
+    {% block 'conteudo' %}
+    
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

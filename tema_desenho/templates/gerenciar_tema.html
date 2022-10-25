@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'titulo' %} Gerenciar Temas {% endblock %}
+
+{% block 'head' %}
+
+<link rel="stylesheet" href="{% static 'css/gerenciar_temas.css' %}">
+
+{% endblock %}
+
+{% block 'conteudo' %}
+
+<div class="container-sm" style="text-align: center;">
+    <p class="titulo">Gerenciar Temas</p>
+    <hr style="border-color: rgb(120, 0, 156);">
+    <div class="mb-3">
+        {% if messages %}
+            {% for mensagem in messages %}
+                <div class="alert {{mensagem.tags}}" role="alert">
+                    {{mensagem}}
+                </div>
+            {% endfor %}
+        {% endif %}
+        <label for="exampleFormControlInput1" class="form-label">Novo Tema</label>
+        <form method="POST" action="{% url 'gerenciar_tema' %}"> {% csrf_token %}
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="cadastrar_tema">
+            <button type="submit" class="btn-primary">Cadastrar</button>
+        </form>
+    </div>
+    <hr style="border-color: rgb(120, 0, 156);">
+    <label class="titulo_tabela">Temas Cadastrados</label>
+    <hr style="border-color: rgb(120, 0, 156);">
+    <table class="table">
+        <tbody>
+            {% for tema in temas %}
+                <tr>
+                    <th scope="row" class="tema">{{tema}}</th>
+                    <td>
+                        <a href="{% url 'excluir_tema' tema.id %}" style="text-decoration: none;">
+                            <button type="button" class="btn-primary-tabela">Excluir</button>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
+
+{% endblock %}

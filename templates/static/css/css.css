@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(251, 237, 255);
+}
+
+.tema_sorteado {
+    margin-top: 35px;
+    background-color: rgba(58, 24, 90, 0.815);
+    color: aliceblue;
+    border-radius: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+#tema {
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+.btn-primary {
+    margin-top: 35px;
+    height: 50px;
+    width: 175px;
+    border-radius: 15px;
+    border-color: rgb(255, 160, 255);
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgba(55, 0, 77, 0.651);
+    background-color: rgba(249, 67, 255, 0.411);
+}
+
+.btn-primary-2 {
+    height: 35px;
+    width: 170px;
+    border-color: rgb(255, 178, 255);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(92, 27, 73);
+    background-color: rgba(111, 3, 153, 0.555);
+}
+
+.alert-warning {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(83, 0, 116);
+}

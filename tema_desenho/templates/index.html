@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'titulo' %} Tema do Desenho {% endblock %}  
+
+{% block 'head' %} 
+
+<link rel="stylesheet" href="{% static 'css/css.css' %}"> 
+
+{% endblock %}
+
+{% block 'conteudo' %}
+
+<div class="container-sm" style="text-align: center;">
+    {% if messages %}
+        {% for mensagem in messages %}
+            <hr>
+            <div class="alert {{mensagem.tags}}" role="alert">{{mensagem}}</div>
+        {% endfor %}
+    {% endif %}
+    <div class="tema_sorteado">
+        <p id="tema">{{tema_selecionado}}</p>
+    </div>
+    <a href="{% url 'sorteio' %}" style="text-decoration: none;">
+        <button type="button" class="btn-primary">SORTEAR</button>
+    </a>
+    <hr style="border-color: rgb(120, 0, 156);">
+    <a href="{% url 'gerenciar_tema' %}">
+        <button type="button" class="btn-primary-2">Gerenciar Temas</button>
+    </a>   
+</div>
+
+{% endblock %}

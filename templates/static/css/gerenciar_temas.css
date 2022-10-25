@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(251, 237, 255);
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(83, 0, 116);
+    margin-top: 15px;
+}
+
+.form-label {
+    color: rgb(83, 0, 116);
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    margin-top: 15px;
+    height: 35px;
+    width: 110px;
+    border-radius: 5px;
+    border-color: rgb(255, 218, 255);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(83, 0, 116);
+    background-color: rgba(251, 143, 255, 0.329);
+}
+
+.tema {
+    font-size: 17px;
+    color: rgb(83, 0, 116);
+}
+
+.titulo_tabela {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(83, 0, 116);
+}
+
+.btn-primary-tabela {
+    height: 30px;
+    width: 72px;
+    border-radius: 10px;
+    border-color: rgb(255, 218, 255);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(83, 0, 116);
+    background-color: rgba(251, 143, 255, 0.329);
+}
+
+.alert-warning {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(83, 0, 116);
+}
+
+.alert-success {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(83, 0, 116);
+    background-color: rgb(255, 218, 255);
+}
